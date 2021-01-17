@@ -1,0 +1,12 @@
+<h1>Games#score</h1>
+<p>/score.html.erb</p>
+<% if @valid_word && @included %>
+    <%= "Congratulations!#{@word} is a valid English word" %>
+      
+<% elsif @valid_word && !@included %>
+<%= "Sorry but #{@word} can´t be build out of #{@letters}" %>
+<% else %>
+<%="Sorry but #{@word} does not seem to be a valid English word"  %>
+<% end %>
+
+    
